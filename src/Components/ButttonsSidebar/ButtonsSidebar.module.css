@@ -1,0 +1,13 @@
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+

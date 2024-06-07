@@ -1,0 +1,13 @@
+.numeros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100px;
+    border: 2px solid white;
+    font-size: 40px;
+    border-radius: 15%;
+    font-family: 'Courier New';
+    background-color: black;
+    color: white;
+}

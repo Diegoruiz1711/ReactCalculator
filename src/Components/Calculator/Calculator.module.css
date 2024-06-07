@@ -1,0 +1,12 @@
+.contenedorCalculadora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    background-color: rgb(69, 69, 69);
+    height: 630px;
+    width: 570px;
+    padding-top: 20px;
+    border-radius: 5%;
+}

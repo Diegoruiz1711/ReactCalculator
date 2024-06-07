@@ -1,0 +1,12 @@
+.visorAcumulador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+    width: 500px;
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: rgb(219, 215, 215);
+    color: black;
+    font-weight: bold;
+}

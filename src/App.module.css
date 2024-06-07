@@ -1,0 +1,8 @@
+.contenedor {
+    background-image: url('./assets/images/mesa.png');
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,10 @@
+.contenedorVisor {
+    border: 2px solid grey;
+    height: 80px;
+    width: 500px;
+    padding-right: 10px;
+    font-size: 350px;
+    background-color: rgb(219, 215, 215);
+    border: 2px solid white;
+    color: black;
+}
