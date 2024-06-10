@@ -1,8 +1,8 @@
-import Notes from "./Notes"
+import Notes from "./Notes/Notes"
 import espiral from './Notes/espiral.png'
 import Styles from './HistoryContainer.module.css'
 
-const HistoryContainer = ({ history, onReturnedValue, setReturnedValue, setHistory, onClear }) => {
+const HistoryContainer = ({ history, onReturnedValue, setReturnedValue, setHistory, onClear, color }) => {
 
     return (
         <div className={Styles.contenedorNotas}>
@@ -14,6 +14,7 @@ const HistoryContainer = ({ history, onReturnedValue, setReturnedValue, setHisto
                 onReturnedValue={onReturnedValue}
                 setReturnedValue={setReturnedValue}
                 onClear={onClear}
+                color={color}
             />
         </div>
     )

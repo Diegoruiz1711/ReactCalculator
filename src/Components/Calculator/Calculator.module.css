@@ -9,4 +9,33 @@
     width: 570px;
     padding-top: 20px;
     border-radius: 5%;
-}
+  }
+  
+  .classic {
+    background-color:  rgb(69, 69, 69);
+    color: black;
+  }
+  
+  .red {
+    background-color: rgb(176, 9, 9);
+  }
+  
+  .green {
+    background-color:rgb(3, 104, 12);
+  }
+  
+  .goldSilver {
+    background-color: gold;
+  }
+  
+  .image {
+    background-image: url('../../assets/images/pikachu.png');
+    background-size: cover;
+    color: white;
+  }
+  
+  .cool {
+    background: -webkit-linear-gradient(to bottom, rgb(252, 3, 227), rgb(41, 213, 127));
+    background: linear-gradient(to bottom, rgb(252, 3, 227), rgb(41, 213, 127));
+    color: white;
+  }

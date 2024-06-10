@@ -1,8 +1,8 @@
-import Numbers from "../NumbersContainer/Numbers/index.jsx"
+import Numbers from "./Numbers/Numbers.jsx"
 import Styles from './NumbersContainer.module.css'
 
-const NumbersContainer = (props) => {
-  const { value, setValue, result, numbers, onClickOperation } = props;
+const NumbersContainer = ({ value, setValue, result, numbers, onClickOperation, color }) => {
+ 
   return (
     <div className={Styles.contenedorBotones}>
       {numbers.map((number) => (
@@ -10,6 +10,7 @@ const NumbersContainer = (props) => {
           value={number}
           setValue={setValue}
           onClickOperation={onClickOperation}
+          color={color}
         />
       ))}
     </div>
@@ -17,8 +18,3 @@ const NumbersContainer = (props) => {
 };
 
 export default NumbersContainer;
-
-
-
-
-

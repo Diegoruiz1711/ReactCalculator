@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .botones {
     display: flex;
     flex-direction: column;
@@ -11,3 +13,94 @@
     
 }
 
+.buttonClassic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: Black;
+    color: White;
+    font-weight: 500;
+}
+
+.buttonCool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(to bottom, rgb(252, 3, 227), rgb(41, 213, 127));
+    background: linear-gradient(to bottom, rgb(252, 3, 227), rgb(41, 213, 127));
+    color: white;
+    font-weight: 500;
+}
+
+.buttonGyS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: gold;
+    color: black;
+    font-weight: 500;
+}
+
+.buttonGreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(3, 104, 12);
+    color: White;
+    font-weight: 500;
+}
+
+.buttonImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 50%;
+    background-image: url('../../assets/images/pikachu.png');
+    background-size: cover;
+    color: black;
+    font-weight: 500;
+}
+
+.buttonRed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(176, 9, 9);
+    color: white;
+    font-weight: 500;
+}

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Styles from './App.module.css';
-import ButtonsSidebar from './Components/ButttonsSidebar/index.jsx';
-import ContenedorCalculadora from './Components/Calculator/index.jsx';
-import CalculationHistory from './Components/CalculationHistory/index.jsx';
+import ButtonsSidebar from './Components/ButttonsSidebar/ButtonsSidebar.jsx';
+import ContenedorCalculadora from './Components/Calculator/Calculator.jsx';
+import CalculationHistory from './Components/CalculationHistory/CalculationHistory.jsx';
 
 
 const App = () => {
@@ -13,6 +13,9 @@ const App = () => {
   const [resultadoPrevio, setResultadoPrevio] = useState('');
   const [calculoCompletado, setCalculoCompletado] = useState(false);
   const [returnedValue, setReturnedValue] = useState('')
+  const [color, setColor] = useState();
+  const [backgroundColor, setBackgroundColor] = useState();
+
 
   const numbers = [7, 8, 9, '%', 4, 5, 6, 'x', 1, 2, 3, '-', 'CE', 0, '+', '='];
 
@@ -88,7 +91,7 @@ const App = () => {
         setCalculoCompletado(false);
       }
     }
-  
+
     if (char === 'CE') {
       setValue('');
       setResultadoPrevio('');
@@ -111,7 +114,7 @@ const App = () => {
           return 'ERROR!';
         }
       };
-  
+
       const resultado = resolverExpresion(value);
       setValue(resultado.toString());
       setResultadoPrevio(resultado.toString());
@@ -123,18 +126,23 @@ const App = () => {
     }
   };
 
+  const handleChangeColor = (color) => {
+    setColor(color);
+  };
+
   return (
 
-    <div className={Styles.contenedor} >
-      {/* <ButtonsSidebar/> */}
+    <div className={Styles.container} >
+      <ButtonsSidebar onChangeColor={handleChangeColor}/>
       <ContenedorCalculadora
         onCalculation={handleCalculation}
-        onClickOperation ={handleOperation}
+        onClickOperation={handleOperation}
         numbers={numbers}
         value={value}
         result={result}
         setReturnedValue={setReturnedValue}
         returnedValue={returnedValue}
+        color={color}
       />
 
       <CalculationHistory
@@ -142,6 +150,7 @@ const App = () => {
         onReturnedValue={handleReturnedValue}
         setReturnedValue={setReturnedValue}
         setHistory={setHistory}
+        color={color}
       />
     </div>
   )

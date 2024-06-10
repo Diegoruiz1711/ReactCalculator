@@ -11,3 +11,41 @@
     background-color: black;
     color: white;
 }
+
+.classic {
+    background-color:  black;
+    color: white;
+  }
+  
+  .red {
+    border: 2px solid white;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+  }
+  
+  .green {
+    border: 2px solid white;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+  }
+  
+  .goldSilver {
+    border: 2px solid white;
+    font-weight: bold;
+    background-color: silver;
+    color: black;
+  }
+  
+  .image {
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .cool {
+    border: 2px solid white;
+    background-color: rgb(119, 2, 137);
+    color: white;
+  }

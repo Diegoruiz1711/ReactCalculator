@@ -1,4 +1,4 @@
-.borrar {
+.delete {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,3 +12,38 @@
     background-color: black;
     color: white;
 }
+
+.classic {
+    background-color:  black;
+    color: white;
+  }
+  
+  .red {
+    font-weight: bold;
+    background-color:  rgb(176, 9, 9);
+    color: white;
+  }
+  
+  .green {
+
+    font-weight: bold;
+    background-color: rgb(3, 104, 12);
+    color: white;
+  }
+  
+  .goldSilver {
+    font-weight: bold;
+    background-color: gold;
+    color: black;
+  }
+  
+  .image {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .cool {
+    background: -webkit-linear-gradient(to bottom, rgb(252, 3, 227), rgb(41, 213, 127));
+    background: linear-gradient(to bottom, rgb(252, 3, 227), rgb(41, 213, 127));
+    color: white;
+  }
